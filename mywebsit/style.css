@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(109, 115, 112);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    
+}
+.logo{
+    padding: 8px;
+    background-color: rgb(108, 108, 110);
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    border-radius: 10px;
+}
+.nav a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.9em;
+    font-weight: 500;
+    padding:8px ;
+    background-color: rgb(103, 104, 104);
+    border-radius: 10px;
+}
+.nav a:hover{
+    color:#601cfc;
+}
+section{
+    padding: 100px 200px;
+
+}
+.min{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imge/4.jpg) no-repeat;
+    background-size:cover ;
+background-position:center ;
+background-attachment:fixed ;
+}
+h2{
+    color: #ffff;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+.min h2 span{
+    display: block;
+    margin-top: 10px;
+font-size: 3em;
+color: #601cfc;
+font-weight: 600;
+}
+.min h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.but{
+    background-color: blue;
+    color: #fff;
+    padding: 0.937em 2.1875em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 30px;
+    transition: 0.7s ease;
+}
+.but:hover{
+    background-color: #4310b9;
+    transform: scale(1.1);
+}
+.icon a{
+     color: #fff;
+     font-size: 1.7em;
+     padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size:2.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.Icon{
+    color: #601cfc;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #4310b9;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+
+
+}
+.pro{
+    background-color: #676262;
+}
+.pro .content{
+    margin-top: 30px;
+
+}
+.procard{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.procard:hover{
+    transform: scale(1.1);
+}
+.proimge img{
+    width: 100%;
+}
+.procard:hover .proimge{
+   opacity: 0.9;
+} 
+.proinfo{
+    padding: 1em;
+}
+.pro-cat{
+    font-size: 0.8em;
+    color: #030303;
+}
+.pro-title{
+display: flex;
+justify-content: space-between;
+text-transform: uppercase;
+font-weight: 800;
+margin-top: 10px;
+}
+.more{
+    text-decoration: none;
+    color: blue;
+}
+.more:hover{
+    color: #601cfc;
+}
+.content .Icon{
+    font-size: 4.5em;
+}
+.content .info h3{
+    color: #000;
+}
+.content .info p{
+    font-size: 1.5em;
+} 
+.foot{
+    background-color: #030303;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footitle{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footitle span{
+    color: #601cfc;
+}
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .nav{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .min{
+        font-size: 1em;
+    }
+    .min h2{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:640px){
+    body{
+font-size: 12px;
+    }
+    .min h2{
+        font-size: 0.8em;
+    }
+    .min h3{
+        font-size: 1.4em;
+    }
+}
+@media(max-width:300px){
+body{
+    font-size: 10px;
+}
+}
